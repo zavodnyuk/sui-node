@@ -1,0 +1,1 @@
+cd sui && docker-compose down --volume && docker rmi mysten/sui-node:stablei && rm -rf /root/sui/db && wget -O /var/sui/genesis.blob https://github.com/MystenLabs/sui-genesis/raw/main/devnet/genesis.blob && docker-compose up -d && echo "NODE RESTARTED"
